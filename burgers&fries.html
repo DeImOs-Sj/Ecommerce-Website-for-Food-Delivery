@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartzilla Food Delivery - Category</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/bb674ddf93.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <div class="d-flex flex-row bd-highlight mb-3 bg-light justify-content-evenly align-items-center">
+    <div class="p-2 bd-highlight"><a href="#"><img src="images/logo-dark.png"></a></div>
+    <div class="p-2 bd-highlight"><a class="dropdown-toggle text-muted" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+          <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+          <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+        </svg> Pune
+  </a>
+  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+      <li><a class="dropdown-item" href="#">Sinhagad Road</a></li>
+      <li><a class="dropdown-item" href="#">Hadapsar</a></li>
+      <li><a class="dropdown-item" href="#">Karve Nagar</li>
+      <li><a class="dropdown-item" href="#">F.C. Road</a></li>
+    </ul></div>
+    <div class="p-2 bd-highlight flex-grow-1"><a class="nav-link a" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+      <h5 class="text-muted">Cuisine</h5>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <div class="d-flex flex-row bd-highlight mb-3">
+            <div class="p-2 bd-highlight"><a class="dropdown-item" href="#"><img src="images/burger.svg" class="displayimages"><figcaption>Burgers & Fries</p></a></div>
+            <div class="p-2 bd-highlight"><a class="dropdown-item" href="#"><img src="images/noodles.svg" class="displayimages"><figcaption>Noodles</p></a></div>
+            <div class="p-2 bd-highlight"><a class="dropdown-item" href="#"><img src="images/pizza.svg" class="displayimages"><figcaption>Pizza & Pasta</p></a></div>
+          </div>
+          <div class="d-flex flex-row bd-highlight mb-3">
+            <div class="p-2 bd-highlight"><a class="dropdown-item" href="#"><img src="images/steak.svg" class="displayimages"><figcaption>Grills & Steaks</p></a></div>
+            <div class="p-2 bd-highlight"><a class="dropdown-item" href="#"><img src="images/fish.svg" class="displayimages"><figcaption>Fish & Seafood</p></a></div>
+            <div class="p-2 bd-highlight"><a class="dropdown-item" href="#"><img src="images/healthy.svg" class="displayimages"><figcaption>Healthy Food</p></a></div>
+          </div>
+          <div class="d-flex flex-row bd-highlight mb-3">
+            <div class="p-2 bd-highlight"><a class="dropdown-item" href="#"><img src="images/cuisine.svg" class="displayimages"><figcaption>Haute Cuisine</p></a></div>
+            <div class="p-2 bd-highlight"><a class="dropdown-item" href="#"><img src="images/chicken.svg"  class="displayimages"><figcaption>Chicken & Snacks</p></a></div>
+            <div class="p-2 bd-highlight"><a class="dropdown-item" href="#"><img src="images/coffee.svg"  class="displayimages"><figcaption>Coffee & deserts</p></a></div>
+          </div>
+      
+    </ul></div>
+    <div class="p-2 bd-highlight"><input class="form-control me-2" type="search" placeholder="   What do you need?" aria-label="Search"></div>
+    <div class="p-2 bd-highlight"><!-- Button trigger modal -->
+      <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person" viewBox="0 0 14 14">
+          <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/>
+        </svg>
+      </button>
+      
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel"></h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link active text-danger" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-lock" viewBox="0 0 16 16">
+                    <path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zM5 8h6a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z"/>
+                  </svg>Sign in</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link text-danger" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person" viewBox="0 0 14 14">
+                    <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/>
+                  </svg>Sign up</button>
+                </li>
+              </ul>
+              <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                  <form>
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label">Email address</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="johndoe@example.com">
+                      
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputPassword1" class="form-label">Password</label>
+                      <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <div class="mb-3 form-check">
+                      <div class="row">
+                        <div class="col-8">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label" for="exampleCheck1">Remember me</label>
+                    </div>
+                    <div class="col-4">
+                      <a href="#" class="text-danger">Forgot password</a></div>
+                    </div></div>
+                    <div class="row">
+                    <button type="submit" class="btn btn-danger d-grid gap-2 text-white">Sign in</button></div>
+                  </form>  
+                </div>
+                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                  <form>
+                    <div class="mb-3">
+                      <label for="exampleInputText1" class="form-label">Full name</label>
+                      <input type="text" class="form-control" id="exampleInputText1" aria-describedby="emailHelp" placeholder="John Doe">
+                      
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label">Email address</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="johndoe@example.com">
+                      
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputPassword1" class="form-label">Password</label>
+                      <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputPassword2" class="form-label">Confirm password</label>
+                      <input type="password" class="form-control" id="exampleInputPassword2">
+                    </div>
+                    <div class="row">
+                      <button type="submit" class="btn btn-danger d-grid gap-2 text-white">Sign in</button></div>
+                    </form>  
+                </div>
+               
+              </div>
+            </div>
+            <div class="modal-footer">
+              
+            </div>
+          </div>
+        </div>
+      </div></div>
+    
+  </div>
+
+<!-- About image -->
+<div class="d-flex flex-wrap bd-highlight mb-3 bg-dark align-items-center">
+  <div class="p-2 bd-highlight me-auto text-white"><a href="#" class="text-white"><i class="fa-solid fa-house"></i>Home ></a><a href="#"class="text-white"> All Categories </a>> Burgers & Fries
+  <br> <h1>Burgers & Fries</h1></div>
+  <div class="p-2 bd-highlight ms-auto"><img src="images/burgers&fries.png"></div>
+ </div>
+
+    <div class="container-fluid d-flex justify-content-center">
+    <div class="d-flex flex-row scroll bd-highlight mb-3 justify-content-between gap-4">
+        <div class="p-2 bd-highlight"><a href="#"><figure><img src="images/burger.svg" class="displayimages"><figcaption>Burgers & Fries</figcaption></figure></a></div>
+        <div class="p-2 bd-highlight"><a href="#"><figure><img src="images/noodles.svg" class="displayimages"><figcaption>Noodles</figcaption></figure></a></div>
+        <div class="p-2 bd-highlight"><a href="#"><figure><img src="images/pizza.svg" class="displayimages"><figcaption>Pizza & Pasta</figcaption></figure></a></div>
+        <div class="p-2 bd-highlight"><a href="#"><figure><img src="images/steak.svg" class="displayimages"><figcaption>Grills & Steaks</figcaption></figure></a></div>
+        <div class="p-2 bd-highlight"><a href="#"><figure><img src="images/fish.svg" class="displayimages"><figcaption>Fish & Seafood</figcaption></figure></a></div>
+        <div class="p-2 bd-highlight"><a href="#"><figure><img src="images/healthy.svg" class="displayimages"><figcaption>Healthy Food</figcaption></figure></a></div>
+        <div class="p-2 bd-highlight"><a href="#"><figure><img src="images/cuisine.svg" class="displayimages"><figcaption>Haute Cuisine</figcaption></figure></a></div>
+        <div class="p-2 bd-highlight"><a href="#"><figure><img src="images/chicken.svg"  class="displayimages"><figcaption>Chicken & Snacks</figcaption></figure></a></div>
+        <div class="p-2 bd-highlight"><a href="#"><figure><img src="images/coffee.svg"  class="displayimages"><figcaption>Coffee & deserts</figcaption></figure></a></div>
+      </div>
+    </div>
+    <div class="container">
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card card-text-center">
+            <a class="card-link" href="pizza.html"><img src="images/p01.jpg" class="card-img-top position-relative" alt="...">
+              <div class="position-absolute translate-end top-0 end-0 p-2"><button type="button" class="btn btn-success text-white btn-sm" data-bs-toggle="tooltip" data-bs-placement="top" title="Average Meal Cost">
+                AMC:₹17.00
+              </button></div>
+            <div class="card-body position-absolute top-100 start-50 translate-middle">
+              <img src="images/01.png">
+              <h5 class="card-title" align="center">McDonald's</h5>
+              <p class="text-muted" align="center">Burgers,Salads,Frenchfries,Drinks</p></a>
+              
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <a class="card-link" href="pizza.html"><img src="images/p02 (1).jpg" class="card-img-top" alt="...">
+              <div class="position-absolute translate-end top-0 end-0 p-2"><button type="button" class="btn btn-primary text-white btn-sm" data-bs-toggle="tooltip" data-bs-placement="top" title="Average Meal Cost">
+                AMC:₹25.00
+              </button></div>
+              <div class="card-body position-absolute top-100 start-50 translate-middle">
+                <img src="images/04.png">
+                <h5 class="card-title">Kentucky Fried Chicken</h5>
+                <p class="text-muted">Fried Chicken,Sandwiches,Frenchfries</p></a>
+              
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <a class="card-link" href="pizza.html"><img src="images/p03 (1).jpg" class="card-img-top" alt="...">
+              <div class="position-absolute translate-end top-0 end-0 p-2"><button type="button" class="btn btn-success text-white btn-sm" data-bs-toggle="tooltip" data-bs-placement="top" title="Average Meal Cost">
+                AMC:₹18.00
+              </button></div>
+            <div class="card-body position-absolute top-100 start-50 translate-middle">
+              <img src="images/07.png">
+              <h5 class="card-title" align="center">Burger King</h5>
+              <p class="text-muted" align="center">Burgers,Salads,Frenchfries,Drinks</p></a>
+              
+            </div>
+          </div>
+        </div>
+        </div>
+    <br><br><br><br>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card">
+              <a class="card-link" href="pizza.html"><img src="images/p04 (1).jpg" class="card-img-top" alt="...">
+                <div class="position-absolute translate-end top-0 end-0 p-2"><button type="button" class="btn btn-primary text-white btn-sm" data-bs-toggle="tooltip" data-bs-placement="top" title="Average Meal Cost">
+                  AMC:₹27.00
+                </button></div>
+              <div class="card-body position-absolute top-100 start-50 translate-middle">
+                <img src="images/06.png">
+                <h5 class="card-title" align="center">Logan's Roadhouse</h5>
+                <p class="text-muted" align="center">Grill,Steaks,Burgers,Frenchfries,Drinks</p></a>
+                
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <a class="card-link" href="pizza.html"><img src="images/p05 (1).jpg" class="card-img-top" alt="...">
+                <div class="position-absolute translate-end top-0 end-0 p-2"><button type="button" class="btn btn-danger text-white btn-sm" data-bs-toggle="tooltip" data-bs-placement="top" title="Average Meal Cost">
+                  AMC:₹40.00
+                </button></div>
+              <div class="card-body position-absolute top-100 start-50 translate-middle">
+                <img src="images/10.png">
+                <h5 class="card-title" align="center">Carrabba's</h5>
+                <p class="text-muted" align="center">Grill,Steaks,Burgers,Frenchfries,Drinks</p></a>
+                
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <a class="card-link" href="pizza.html"><img src="images/p06 (1).jpg" class="card-img-top" alt="...">
+                <div class="position-absolute translate-end top-0 end-0 p-2"><button type="button" class="btn btn-primary text-white btn-sm" data-bs-toggle="tooltip" data-bs-placement="top" title="Average Meal Cost">
+                  AMC:₹26.00
+                </button></div>
+                <div class="card-body position-absolute top-100 start-50 translate-middle">
+                  <img src="images/08.png">
+                  <h5 class="card-title" align="center">Bonefish Grill</h5>
+                  <p class="text-muted" align="center">Grill,Fish,Burgers,Frenchfries,Drinks</p></a>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+        <br><br><br><br>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card">
+              <a class="card-link" href="pizza.html"><img src="images/p07.jpg" class="card-img-top" alt="...">
+                <div class="position-absolute translate-end top-0 end-0 p-2"><button type="button" class="btn btn-success text-white btn-sm" data-bs-toggle="tooltip" data-bs-placement="top" title="Average Meal Cost">
+                  AMC:₹19.00
+                </button></div>
+              <div class="card-body position-absolute top-100 start-50 translate-middle">
+                <img src="images/02.png">
+                <h5 class="card-title" align="center">Domino's Pizza</h5>
+                <p class="text-muted" align="center">Pizza,,Burgers,salads,Frenchfries,Drinks</p></a>
+                
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <a class="card-link" href="pizza.html"><img src="images/p08.jpg" class="card-img-top" alt="...">
+                <div class="position-absolute translate-end top-0 end-0 p-2"><button type="button" class="btn btn-success text-white btn-sm" data-bs-toggle="tooltip" data-bs-placement="top" title="Average Meal Cost">
+                  AMC:₹17.00
+                </button></div>
+                <div class="card-body position-absolute top-100 start-50 translate-middle">
+                  <img src="images/13.png">
+                  <h5 class="card-title" align="center">Hardee's</h5>
+                  <p class="text-muted" align="center">Burgers,Salads,Frenchfries,Drinks</p></a>
+                
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <a class="card-link" href="pizza.html"><img src="images/p09.jpg" class="card-img-top" alt="..."></a>
+              <div class="position-absolute translate-end top-0 end-0 p-2"><button type="button" class="btn btn-danger text-white btn-sm" data-bs-toggle="tooltip" data-bs-placement="top" title="Average Meal Cost">
+                AMC:₹34.00
+              </button></div>
+              <div class="card-body position-absolute top-100 start-50 translate-middle">
+                <img src="images/09.png">
+                <h5 class="card-title" align="center">Ruth's Chris Steak House</h5>
+                <p class="text-muted" align="center">Grills,Steaks,Burgers,Frenchfries,Drinks</p></a>
+                
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+        <br><br><br><br>
+    <!-- Footer -->
+<div class="cotainer">
+  <div class="d-flex flex-row bd-highlight bg-dark justify-content-evenly">
+    <div class="p-2 bd-highlight"><h2 class="text-white">Cartzilla<sup><small>TM</small></sup></h2><br><div class="dropdown">
+      <button class="btn btn-dark dropdown-toggle btn-sm" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+        <img src="images/en.png">  Eng/$
+      </button>
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+        <li><select class="form-select form-select-sm" aria-label=".form-select-sm example">
+          <option selected>$ USD</option>
+          <option>€ EUR</option>
+          <option>£ UKP</option>
+          <option>¥ JPY</option>
+        </select></li>
+        <li><a class="dropdown-item" href="#"><img src="images/fr.png"> Francias</a></li>
+        <li><a class="dropdown-item" href="#"><img src="images/de.png"> Deutsch</a></li>
+        <li><a class="dropdown-item" href="#"><img src="images/it.png"> Italiano</a></li>
+      </ul>
+    </div></div>
+    <div class="p-2 bd-highlight"><h5 class="text-white">Join us</h5><br>
+    <a href="#" class="text-muted">Careers</a><br>
+    <a href="#" class="text-muted">Restaurants</a><br>
+    <a href="#" class="text-muted">Become a Courier</a><br>
+    <a href="#" class="text-muted">About</a><br>
+  </div>
+    <div class="p-2 bd-highlight"><h5 class="text-white">Let us help you</h5><br>
+      <a href="#" class="text-muted">Help Center</a><br>
+      <a href="#" class="text-muted">Support</a><br>
+      <a href="#" class="text-muted">Contact</a><br>
+  
+  </div>
+  <div class="p-2 bd-highlight"><h5 class="text-white">Follow us</h5><br>
+    <a href="#" class="text-muted">Facebook</a><br>
+    <a href="#" class="text-muted">Tweeter</a><br>
+    <a href="#" class="text-muted">Instagram</a><br>
+    
+  </div>
+  <div class="p-2 bd-highlight"><h5 class="text-white">Download our app</h5><br>
+    <a href="#"><img src="images\images (1).png"></a>
+    <a href="#"><img src="images\images.png"></a>
+    
+  </div>
+  </div>
+ 
+  <div class="d-flex flex-row bd-highlight bg-dark border-top">
+    
+    <div class="p-2 bd-highlight flex-grow-1"><p class="text-muted">© All rights reserved. Made by createx studio.</p></div>
+    <div class="p-2 bd-highlight"><a href="#" class="text-muted">Privacy Policy</a></div>
+    <div class="p-2 bd-highlight"><a href="#" class="text-muted">Terms & conditions</a></div>
+    <div class="p-2 bd-highlight"><a href="#" class="text-muted">Cookies Policy</a></div>
+  </div>
+  </div> 
+    
+</body>
+</html>
+<script>
+  var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+  return new bootstrap.Tooltip(tooltipTriggerEl)
+})
+</script>

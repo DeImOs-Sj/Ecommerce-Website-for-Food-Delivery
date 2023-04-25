@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cartzilla Food Delivery - Category</title>
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/ico">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/bb674ddf93.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <!-- Navbar -->
+  <div class="d-flex flex-row bd-highlight mb-3 bg-light justify-content-evenly align-items-center">
+    <div class="p-2 bd-highlight"><a href="#"><img src="images/logo-dark.png"></a></div>
+    <div class="p-2 bd-highlight"><a class="dropdown-toggle text-muted" href="#" id="navbarDropdown" role="button"
+        data-bs-toggle="dropdown" aria-expanded="false">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt"
+          viewBox="0 0 16 16">
+          <path
+            d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z" />
+          <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+        </svg> Pune
+      </a>
+      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <li><a class="dropdown-item" href="#">Sinhagad Road</a></li>
+        <li><a class="dropdown-item" href="#">Hadapsar</a></li>
+        <li><a class="dropdown-item" href="#">Karve Nagar</li>
+        <li><a class="dropdown-item" href="#">F.C. Road</a></li>
+      </ul>
+    </div>
+    <div class="p-2 bd-highlight flex-grow-1"><a class="nav-link a" href="#" id="navbarDropdown" role="button"
+        data-bs-toggle="dropdown" aria-expanded="false">
+        <h5 class="text-muted">Cuisine</h5>
+      </a>
+      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <div class="d-flex flex-row bd-highlight mb-3">
+          <div class="p-2 bd-highlight"><a class="dropdown-item" href="#"><img src="images/burger.svg"
+                class="displayimages">
+              <figcaption>Burgers & Fries</p>
+            </a></div>
+          <div class="p-2 bd-highlight"><a class="dropdown-item" href="#"><img src="images/noodles.svg"
+                class="displayimages">
+              <figcaption>Noodles</p>
+            </a></div>
+          <div class="p-2 bd-highlight"><a class="dropdown-item" href="#"><img src="images/pizza.svg"
+                class="displayimages">
+              <figcaption>Pizza & Pasta</p>
+            </a></div>
+        </div>
+        <div class="d-flex flex-row bd-highlight mb-3">
+          <div class="p-2 bd-highlight"><a class="dropdown-item" href="#"><img src="images/steak.svg"
+                class="displayimages">
+              <figcaption>Grills & Steaks</p>
+            </a></div>
+          <div class="p-2 bd-highlight"><a class="dropdown-item" href="#"><img src="images/fish.svg"
+                class="displayimages">
+              <figcaption>Fish & Seafood</p>
+            </a></div>
+          <div class="p-2 bd-highlight"><a class="dropdown-item" href="#"><img src="images/healthy.svg"
+                class="displayimages">
+              <figcaption>Healthy Food</p>
+            </a></div>
+        </div>
+        <div class="d-flex flex-row bd-highlight mb-3">
+          <div class="p-2 bd-highlight"><a class="dropdown-item" href="#"><img src="images/cuisine.svg"
+                class="displayimages">
+              <figcaption>Haute Cuisine</p>
+            </a></div>
+          <div class="p-2 bd-highlight"><a class="dropdown-item" href="#"><img src="images/chicken.svg"
+                class="displayimages">
+              <figcaption>Chicken & Snacks</p>
+            </a></div>
+          <div class="p-2 bd-highlight"><a class="dropdown-item" href="#"><img src="images/coffee.svg"
+                class="displayimages">
+              <figcaption>Coffee & deserts</p>
+            </a></div>
+        </div>
+
+      </ul>
+    </div>
+    <div class="p-2 bd-highlight"><input class="form-control me-2" type="search" placeholder="   What do you need?"
+        aria-label="Search"></div>
+    <div class="p-2 bd-highlight"><!-- Button trigger modal -->
+      <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person"
+          viewBox="0 0 14 14">
+          <path
+            d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" />
+        </svg>
+      </button>
+
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link active text-danger" id="home-tab" data-bs-toggle="tab" data-bs-target="#home"
+                    type="button" role="tab" aria-controls="home" aria-selected="true"><svg
+                      xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-lock"
+                      viewBox="0 0 16 16">
+                      <path
+                        d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zM5 8h6a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z" />
+                    </svg>Sign in</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link text-danger" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile"
+                    type="button" role="tab" aria-controls="profile" aria-selected="false"><svg
+                      xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person"
+                      viewBox="0 0 14 14">
+                      <path
+                        d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" />
+                    </svg>Sign up</button>
+                </li>
+              </ul>
+              <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                  <form>
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label">Email address</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                        placeholder="johndoe@example.com">
+
+                    </div>
+                    <div class="mb-3">
+                      <label for="pwd" class="form-label">Password</label>
+                      <input type="password" class="form-control" id="pwd" onclick="passwd()">
+                    </div>
+                    <div class="mb-3 form-check">
+                      <div class="row">
+                        <div class="col-8">
+                          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                          <label class="form-check-label" for="exampleCheck1">Remember me</label>
+                        </div>
+                        <div class="col-4">
+                          <a href="#" class="text-danger">Forgot password</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <button type="submit" class="btn btn-danger d-grid gap-2 text-white">Sign in</button>
+                    </div>
+                  </form>
+                </div>
+                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                  <form>
+                    <div class="mb-3">
+                      <label for="exampleInputText1" class="form-label">Full name</label>
+                      <input type="text" class="form-control" id="exampleInputText1" aria-describedby="emailHelp"
+                        placeholder="John Doe">
+
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label">Email address</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                        placeholder="johndoe@example.com">
+
+                    </div>
+                    <div class="mb-3">
+                      <label for="pwd" class="form-label">Password</label>
+                      <input type="password" class="form-control" id="pwd" onclick="passwd()">
+
+                    </div>
+                    <div class="mb-3">
+                      <label for="pwd" class="form-label">Confirm password</label>
+                      <input type="password" class="form-control" id="pwd" onclick="passwd()">
+                    </div>
+                    <div class="row">
+                      <button type="submit" class="btn btn-danger d-grid gap-2 text-white">Sign in</button>
+                    </div>
+                  </form>
+                </div>
+
+              </div>
+            </div>
+            <div class="modal-footer">
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <!-- About image -->
+  <div class="d-flex flex-wrap bd-highlight mb-3 bg-dark">
+    <div class="p-2 bd-highlight me-auto"><img src="images/beef.png"></div>
+    <div class="p-2 bd-highlight text-white" align="center">
+      <h4>#1 Food Delivery Service Since 2010</h4><br>
+      <h1>We Deliver Your Favourate Food <br> Fresh Fast in <a class="dropdown-toggle text-danger" href="#"
+          id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"
+          style="text-decoration: none;">
+          Pune
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <li><a class="dropdown-item" href="#">Sinhagad Road</a></li>
+          <li><a class="dropdown-item" href="#">Hadapsar</a></li>
+          <li><a class="dropdown-item" href="#">Karve Nagar</li>
+          <li><a class="dropdown-item" href="#">F.C. Road</a></li>
+        </ul>
+      </h1>
+      <button type="button" class="btn btn-danger">What do you want to eat?</button>
+    </div>
+    <div class="p-2 bd-highlight ms-auto"><img src="images/salmon.png"></div>
+    <div class="p-2 bd-highlight d-block mx-auto"><img src="images/pizza.png"></div>
+  </div>
+
+  <!-- Trending heading -->
+  <div class="container">
+    <h2 align="center">Trending Food in your city</h2>
+    <h5 class="text-muted" align="center">Choose what you want and we deliver it to you</h5>
+    <br><br>
+
+    <!-- Food images -->
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card">
+          <a class="card-link" href="burgers&fries.html"><img src="images/01.jpg" class="card-img-top" alt="..."></a>
+          <div class="card-body">
+            <a class="card-link" href="burgers&fries.html">
+              <h5 class="card-title">Burgers & Fries</h5>
+            </a>
+
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <a class="card-link" href="burgers&fries.html"><img src="images/02.jpg" class="card-img-top" alt="..."></a>
+          <div class="card-body">
+            <a class="card-link" href="burgers&fries.html">
+              <h5 class="card-title">Noodles</h5>
+            </a>
+
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <a class="card-link" href="burgers&fries.html"><img src="images/03.jpg" class="card-img-top" alt="..."></a>
+          <div class="card-body">
+            <a class="card-link" href="burgers&fries.html">
+              <h5 class="card-title">Sushi & Rolls</h5>
+            </a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <br><br>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card">
+          <a class="card-link" href="burgers&fries.html"><img src="images/04.jpg" class="card-img-top" alt="..."></a>
+          <div class="card-body">
+            <a class="card-link" href="burgers&fries.html">
+              <h5 class="card-title">Pizza & Pasta</h5>
+            </a>
+
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <a class="card-link" href="burgers&fries.html"><img src="images/05.jpg" class="card-img-top" alt="..."></a>
+          <div class="card-body">
+            <a class="card-link" href="burgers&fries.html">
+              <h5 class="card-title">Coffee & Deserts</h5>
+            </a>
+
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <a class="card-link" href="burgers&fries.html"><img src="images/06.jpg" class="card-img-top" alt="..."></a>
+          <div class="card-body">
+            <a class="card-link" href="burgers&fries.html">
+              <h5 class="card-title">Healthy & Food</h5>
+            </a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br><br>
+
+  <!-- Mobile div -->
+  <div class="d-flex align-items-center bg-danger text-white p-5">
+    <div class="flex-grow-1" style="margin-left: 200px;">
+      <h2>Order food on the go <br> Cartzilla App</h2><br>
+      <p>Pay with an app wallet, collect loyalty points, track<br> your orders in real time and much more.</p><br>
+      <img src="images/images (1).png">
+      <img src="images/images.png">
+
+    </div>
+    <div>
+      <img src="images/phone.png">
+    </div>
+  </div>
+  <br><br>
+
+  <!-- Become a courier or partner -->
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="card text-center" style="background-color: #D5F5E3;">
+          <div class="card-body">
+            <img src="images/courier.png" class="float-end" alt="..." height="350" width="250"><br><br>
+            <h3 class="card-title">Become a Courier</h3>
+            <h6 class="card-text text-muted">Earn competitive salary as delivery <br>courier working flexible schedule..
+            </h6>
+            <button type="button" class="btn btn-danger">Start Earning</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="card text-center" style="background-color: #FEF9E7;">
+          <div class="card-body align-content-center">
+            <img src="images/chef.png" class="float-end" alt="..." height="350" width="250"><br><br>
+            <h3>Become a Parner</h3>
+            <h6 class="card-text text-muted">Grow your business by reaching <br>new customers.</h6>
+            <button type="button" class="btn btn-danger">Partner with us</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <br><br><br><br>
+
+  <!-- Popular Restaurants -->
+
+  <h2 align="center">Popular restaurants in your city</h2>
+  <h5 class="text-muted" align="center">Check the best restaurants near you</h5>
+  <br><br>
+  <div class="container justify-contents-evenly">
+    <div class="row">
+      <div class="col-sm-3">
+        <div class="card">
+          <div class="card-body">
+            <a class="card-link" href="#"><img src="images/01.png"></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="card">
+          <div class="card-body">
+            <a class="card-link" href="#"><img src="images/02.png"></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="card">
+          <div class="card-body">
+            <a class="card-link" href="#"><img src="images/03.png"></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="card">
+          <div class="card-body">
+            <a class="card-link" href="#"><img src="images/04.png"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col-sm-3">
+        <div class="card">
+          <div class="card-body">
+            <a class="card-link" href="#"><img src="images/05.png"></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="card">
+          <div class="card-body">
+            <a class="card-link" href="#"><img src="images/06.png"></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="card">
+          <div class="card-body">
+            <a class="card-link" href="#"><img src="images/07.png"></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="card">
+          <div class="card-body">
+            <a class="card-link" href="#"><img src="images/08.png"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col-sm-3">
+        <div class="card">
+          <div class="card-body">
+            <a class="card-link" href="#"><img src="images/09.png"></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="card">
+          <div class="card-body">
+            <a class="card-link" href="#"><img src="images/10.png"></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="card">
+          <div class="card-body">
+            <a class="card-link" href="#"><img src="images/11.png"></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="card">
+          <div class="card-body">
+            <a class="card-link" href="#"><img src="images/12.png"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+
+  <!-- Customer Reviews -->
+  <div class="container-fluid" style="background-color: #F4F6F6;">
+    <h2 align="center">Customer Reviews</h2><br><br>
+    <div class="row">
+      <div class="col-sm-3">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title"><i class="fa-solid fa-star text-warning"></i><i
+                class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i><i
+                class="fa-solid fa-star text-warning"></i><i class="fa-regular fa-star"></i></h5>
+            <p class="card-text text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla voluptates
+              odit, corporis quibusdam officiis iusto dicta saepe enim quam quisquam, at ex tenetur iure debitis eos
+              magni, excepturi rerum! Nam.</p>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title"><i class="fa-solid fa-star text-warning"></i><i
+                class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i><i
+                class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i></h5>
+            <p class="card-text text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla voluptates
+              odit, corporis quibusdam officiis iusto dicta saepe enim quam quisquam, at ex tenetur iure debitis eos
+              magni, excepturi rerum! Nam.</p>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title"><i class="fa-solid fa-star text-warning"></i><i
+                class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i><i
+                class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></h5>
+            <p class="card-text text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla voluptates
+              odit, corporis quibusdam officiis iusto dicta saepe enim quam quisquam, at ex tenetur iure debitis eos
+              magni, excepturi rerum! Nam.</p>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title"><i class="fa-solid fa-star text-warning"></i><i
+                class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i><i
+                class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></h5>
+            <p class="card-text text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla voluptates
+              odit, corporis quibusdam officiis iusto dicta saepe enim quam quisquam, at ex tenetur iure debitis eos
+              magni, excepturi rerum! Nam.</p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-3">
+        <div class="card" style="border: none; outline:none; background-color: #F4F6F6;">
+          <div class="card-body">
+            <div style="float: left;">
+              <img src="images/04(1).jpg" height="50" width="50" class="rounded-circle">
+            </div>
+            <div>
+              <p class="card-text">Laura Willson<br>Feb 5 2020</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="card" style="border: none; outline:none; background-color: #F4F6F6;">
+          <div class="card-body">
+            <div style="float: left;">
+              <img src="images/01(1).jpg" height="50" width="50" class="rounded-circle">
+            </div>
+            <div>
+              <p class="card-text">Mary Alice Grant<br>Jan 27 2020</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="card" style="border: none; outline:none;background-color: #F4F6F6;">
+          <div class="card-body">
+            <div style="float: left;">
+              <img src="images/03(2).jpg" height="50" width="50" class="rounded-circle">
+            </div>
+            <div>
+              <p class="card-text">Richard Davis<br>Feb 14 2020</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="card" style="border: none; outline:none;background-color: #F4F6F6;">
+          <div class="card-body">
+            <div style="float: left;">
+              <img src="images/01(2).jpg" height="50" width="50" class="rounded-circle">
+            </div>
+            <div>
+              <p class="card-text">Rafael Marquez<br>Dec 19 2020</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <br><br>
+  <!-- Footer -->
+  <div class="cotainer">
+    <div class="d-flex flex-row bd-highlight bg-dark justify-content-evenly">
+      <div class="p-2 bd-highlight">
+        <h2 class="text-white">Cartzilla<sup><small>TM</small></sup></h2><br>
+        <div class="dropdown">
+          <button class="btn btn-dark dropdown-toggle btn-sm" type="button" id="dropdownMenuButton1"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            <img src="images/en.png"> Eng/$
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <li><select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                <option selected>$ USD</option>
+                <option>€ EUR</option>
+                <option>£ UKP</option>
+                <option>¥ JPY</option>
+              </select></li>
+            <li><a class="dropdown-item" href="#"><img src="images/fr.png"> Francias</a></li>
+            <li><a class="dropdown-item" href="#"><img src="images/de.png"> Deutsch</a></li>
+            <li><a class="dropdown-item" href="#"><img src="images/it.png"> Italiano</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="p-2 bd-highlight">
+        <h5 class="text-white">Join us</h5><br>
+        <a href="#" class="text-muted">Careers</a><br>
+        <a href="#" class="text-muted">Restaurants</a><br>
+        <a href="#" class="text-muted">Become a Courier</a><br>
+        <a href="#" class="text-muted">About</a><br>
+      </div>
+      <div class="p-2 bd-highlight">
+        <h5 class="text-white">Let us help you</h5><br>
+        <a href="#" class="text-muted">Help Center</a><br>
+        <a href="#" class="text-muted">Support</a><br>
+        <a href="#" class="text-muted">Contact</a><br>
+
+      </div>
+      <div class="p-2 bd-highlight">
+        <h5 class="text-white">Follow us</h5><br>
+        <a href="#" class="text-muted">Facebook</a><br>
+        <a href="#" class="text-muted">Tweeter</a><br>
+        <a href="#" class="text-muted">Instagram</a><br>
+
+      </div>
+      <div class="p-2 bd-highlight">
+        <h5 class="text-white">Download our app</h5><br>
+        <a href="#"><img src="images\images (1).png"></a>
+        <a href="#"><img src="images\images.png"></a>
+
+      </div>
+    </div>
+
+    <div class="d-flex flex-row bd-highlight bg-dark border-top">
+
+      <div class="p-2 bd-highlight flex-grow-1">
+        <p class="text-muted">© All rights reserved. Made by createx studio.</p>
+      </div>
+      <div class="p-2 bd-highlight"><a href="#" class="text-muted">Privacy Policy</a></div>
+      <div class="p-2 bd-highlight"><a href="#" class="text-muted">Terms & conditions</a></div>
+      <div class="p-2 bd-highlight"><a href="#" class="text-muted">Cookies Policy</a></div>
+    </div>
+  </div>
+
+
+</body>
+
+</html>
+<script>
+  var myModal = document.getElementById('myModal')
+  var myInput = document.getElementById('myInput')
+
+  myModal.addEventListener('shown.bs.modal', function () {
+    myInput.focus()
+  })
+  var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+  var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+    return new bootstrap.Tooltip(tooltipTriggerEl)
+  })
+  function passwd() {
+    var x = document.getElementById("pwd");
+    if (x.type === "password") {
+      x.type = "text";
+    }
+    else {
+      x.type = "password";
+    }
+  }
+</script>

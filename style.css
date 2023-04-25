@@ -1,0 +1,130 @@
+    .nav-link
+        {
+            color:black;
+        }
+        .nav-item
+        {
+          font-size: larger;
+          font-family:'Courier New', Courier, monospace;
+        }
+        .card-link
+        {
+          color: black;
+          text-decoration: none;
+          text-align: center;
+        }
+        .displayimages
+        {
+          height: 80px;
+          width: 80px;
+        }
+        input[type=search]
+        {
+          height: 30px;
+          width: 30px;
+          border-radius: 50px;
+          border: none;
+          outline: none;
+          color: black;
+          background-image: url('images/search.jfif');
+          background-repeat: no-repeat;
+          background-position: -0.5px;
+          transition: width 1s;
+
+        }
+        input[type=search]:focus
+        {
+          width: 500px;
+          background-position: 450px;
+        }
+        a
+        {
+          text-decoration: none;
+          color: black;
+        }
+        a>p
+        {
+            color: black;
+            text-align: center;
+        }
+        
+        .scroll
+        {
+            overflow-x: scroll;
+            white-space: nowrap;
+            width: 1200px;
+            background-color: #f6f9fc;
+        }
+        .scroll a
+        {
+            display: inline;
+            padding-left: 40px;
+        }
+        .card-body>p
+        {
+          font-size: 11px;
+          /* text-align: center; */
+        }
+        .card-title
+        {
+          text-align: center;
+        }
+        
+        /* cart details */
+        .quantity
+        { 
+          /* border-bottom: 4px solid lightgray; */
+          width: 15%;
+          display: flex;
+          align-items: center;
+          padding-left: 50px;
+        }
+        
+        
+        .price
+        { 
+          /* border-bottom: 4px solid lightgray; */
+          width: 15%;
+          display: flex;
+          align-items: center;
+          padding-left: 20px;
+        }
+        .total
+        { 
+          width: 20%;
+          /* border-bottom: 4px solid lightgray; */
+          display: flex;
+          align-items: center;
+          padding-left: 20px;
+        }
+        .remove
+        { 
+          width: 20%;
+          /* border-bottom: 4px solid lightgray; */
+          display: flex;
+          align-items: center;
+          padding-left: 50px;
+        }
+        
+        
+        
+        .nav-link>.dropdown-menu
+        {
+          display: none;
+        }
+        .nav-link>.dropdown-toggle:hover + .dropdown-menu
+        {
+          display: block;
+        }
+        .a:hover +.dropdown-menu
+        {
+          display: block;
+        }
+        input[type="password"]
+        {
+          background-image: url('images/eye.png');
+          background-repeat: no-repeat;
+          background-position: right;
+          background-size: 20px;
+        }
+        
